@@ -81,5 +81,5 @@ def archive_messages_in_room(room_name):
     print(f"Messages from room '{room_name}' have been archived in '{text_filename}'.")
 
 if __name__ == "__main__":
-    archive_messages_in_room("Network-base")
+    archive_messages_in_room("<YOUR-ROOM-NAME>")
 
