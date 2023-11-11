@@ -73,7 +73,7 @@ def archive_messages_in_room(room_name):
             archive_file.write(f"{sender_name} ({timestamp}): {text}\n")
 
             for file_url in file_urls:
-                file_extension = file_url.split('.')[-1]
+                file_extension = "jpg"
                 safe_timestamp = valid_filename(timestamp)
                 image_filename = f"{room_name}_{safe_timestamp}.{file_extension}"
                 download_file(file_url, image_filename)
